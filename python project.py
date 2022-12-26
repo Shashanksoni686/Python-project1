@@ -74,6 +74,7 @@ dob=Date(dob[0],dob[1],dob[2])
 PD=input("Enter Present Day as DD/MM/YYYY : ")
 PD=[int(i) for i in PD.split("/")]
 PD=Date(PD[0],PD[1],PD[2])
+enteryourname=input("Enter your name and I will Calculate the number of days You have been alive: ")
 
 # Function call
-print("\nThe number of days the person is alive:",getDifference(dob, PD))
+print("\nThe number of days the",enteryourname,"is alive:",getDifference(dob, PD),"\n WOW! THATS AWESOME!")
