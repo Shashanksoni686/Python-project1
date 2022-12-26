@@ -68,13 +68,14 @@ def getDifference(dt1, dt2):
 
 
 # Driver Code
+enteryourname=input("Enter your name and I will Calculate the number of days You have been alive: ")
 dob=input("Enter your DOB as DD/MM/YYYY : ")
 dob=[int(i) for i in dob.split("/")]
 dob=Date(dob[0],dob[1],dob[2])
 PD=input("Enter Present Day as DD/MM/YYYY : ")
 PD=[int(i) for i in PD.split("/")]
 PD=Date(PD[0],PD[1],PD[2])
-enteryourname=input("Enter your name and I will Calculate the number of days You have been alive: ")
+
 
 # Function call
 print("\nThe number of days the",enteryourname,"is alive:",getDifference(dob, PD),"\n WOW! THATS AWESOME!")
